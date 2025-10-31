@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Topic Listing Page</title>
+
+        <!-- CSS FILES -->        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans&display=swap" rel="stylesheet">
+                        
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+        <link href="css/templatemo-topic-listing.css" rel="stylesheet">
+<!--
+
+TemplateMo 590 topic listing
+
+https://templatemo.com/tm-590-topic-listing
+
+-->
+    </head>
+    
+    <body class="topics-listing-page" id="top">
+
+        <main>
+
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+
+                    <a class="navbar-brand text-white" href="index.html">
+                        <img src="images/WIPLogoTransparent.png" width="150" height="150" alt="WorkInPilot">
+                        <!--i class="bi-back"></!--i -->
+                        <span>WorkInPilot</span>
+                    </a>                    
+
+                    <div class="d-lg-none ms-auto me-4">
+                        <a href="#top" class="navbar-icon bi-person smoothscroll"></a>
+                    </div>
+    
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+    
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-lg-5 me-lg-auto">
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="index.html#section_1">Home</a>
+                            </li>
+                        </ul>
+
+                        <!-- div class="d-none d-lg-block">
+                            <a href="#top" class="navbar-icon bi-person smoothscroll"></a>
+                        </!-->
+                        <div class="d-none d-lg-block">
+                            <!-- a href="#top" class="navbar-icon bi-person smoothscroll"></!-->
+                            <a href="https://staging.workinpilot.fun/login" class="btn custom-btn mt-2 mt-lg-3">Test Login</a>
+                            
+
+                        
+                    </div>
+                </div>
+            </nav>
+
+
+            <header class="site-header d-flex flex-column justify-content-center align-items-center">
+                <div class="container">
+                    <div class="row align-items-center">
+
+                        <div class="col-lg-5 col-12">
+                            <!-- nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="index.html">Homepage</a></li>
+
+                                    <li class="breadcrumb-item active" aria-current="page">Sample Resumes</li>
+                                </ol>
+                            </!-->
+
+                            <h2 class="text-white"><br><br>Sample Resumes</h2>
+                        </div>
+
+                    </div>
+                </div>
+            </header>
+
+
+            <!--section class="section-padding">
+                <div class="container" -->
+
+
+            <section class="explore-section section-padding" id="section_2">
+                <div class="container">
+
+
+                <div class="container-fluid">
+                    <div class="row">
+
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="tech-tab" data-bs-toggle="tab" data-bs-target="#tech-tab-pane" type="button" role="tab" aria-controls="tech-tab-pane" aria-selected="true">Technology</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="analyst-tab" data-bs-toggle="tab" data-bs-target="#analyst-tab-pane" type="button" role="tab" aria-controls="analyst-tab-pane" aria-selected="false">Managers & Analysts</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="finance-tab" data-bs-toggle="tab" data-bs-target="#finance-tab-pane" type="button" role="tab" aria-controls="finance-tab-pane" aria-selected="false">Finance</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="marketing-tab" data-bs-toggle="tab" data-bs-target="#marketing-tab-pane" type="button" role="tab" aria-controls="marketing-tab-pane" aria-selected="false">Marketing</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="sales-tab" data-bs-toggle="tab" data-bs-target="#sales-tab-pane" type="button" role="tab" aria-controls="sales-tab-pane" aria-selected="false">Sales</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="healthcare-tab" data-bs-toggle="tab" data-bs-target="#healthcare-tab-pane" type="button" role="tab" aria-controls="healthcare-tab-pane" aria-selected="false">Healthcare</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="creatives-tab" data-bs-toggle="tab" data-bs-target="#creatives-tab-pane" type="button" role="tab" aria-controls="creatives-tab-pane" aria-selected="false">Creatives</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="grads-tab" data-bs-toggle="tab" data-bs-target="#grads-tab-pane" type="button" role="tab" aria-controls="grads-tab-pane" aria-selected="false">Recent Grads</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-12">
+                            <div class="tab-content" id="myTabContent">
+
+
+                                <div class="tab-pane fade show active" id="tech-tab-pane" role="tabpanel" aria-labelledby="tech-tab" tabindex="0">
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+                                            <div class="custom-block bg-white shadow-lg">
+                                                    <div class="d-flex">
+                                                        <a href="assets/test_resumes/JaneDonde.pdf" download>
+                                                        <div>
+                                                            <h5 class=mb-2">Jane Donde</h5>
+                                                            <p><br>Detail-oriented Java Developer with three years of experience in developing unique programming solutions for web applications.<br><br>Skilled in developing user friendly web applications, debugging written code and writing unique code to solve technology problems.</p>
+                                                        </div>
+                                                        </a>
+                                                    </div>
+                                            </div>
+                                        </div>                                           
+
+                                        <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+                                            <div class="custom-block bg-white shadow-lg">
+                                                    <div class="d-flex">
+                                                        <a href="assets/test_resumes/MalikRabb.pdf" download>
+                                                        <div>
+                                                            <h5 class="mb-2">Malik Rabb</h5>
+                                                            <p><br>Motivated data scientist with over three years of professional experience analyzing data for managers to engage in decision-making processes.<br><br>Seeking a role as a Data Scientist with the Stehr Group.</p>
+                                                        </div>
+                                                        </a>
+                                                    </div>
+                                            </div>
+                                        </div>                                         
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade" id="analyst-tab-pane" role="tabpanel" aria-labelledby="analyst-tab" tabindex="0">
+                                    <div class="row">
+
+                                        <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+                                            <div class="custom-block bg-white shadow-lg">
+                                                    <div class="d-flex">
+                                                        <a href="assets/test_resumes/JudyKreiner.pdf" download>
+                                                        <div>
+                                                            <h5 class="mb-2">Judy Kreiner</h5>
+                                                            <p><br>Professional manager with over three years of experience in fast-paced environments.<br><br>Seeking a position as a Manager with Space Projects, Inc.</p>
+                                                        </div>
+                                                        </a>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+                                            <div class="custom-block bg-white shadow-lg">
+                                                    <div class="d-flex">
+                                                        <a href="assets/test_resumes/IvyHaddington.pdf" download>
+                                                        <div>
+                                                            <h5 class="mb-2">Ivy Haddington</h5>
+                                                            <p><br>Dedicated Project Manager with over 10 years of experience managing campaigns, leading teams and supporting client success.<br><br>Seeking to gain greater responsibilities and employ my leadership expertise as a senior Project Manager for Corkboard Tech.</p>
+                                                        </div>
+                                                        </a>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+                                            <div class="custom-block bg-white shadow-lg">
+                                                    <div class="d-flex">
+                                                        <a href="assets/test_resumes/RosieMiller.pdf" download>
+                                                        <div>
+                                                            <h5 class="mb-2">Rosie Miller</h5>
+                                                            <p><br>Experienced Restaurant Manager bringing demonstrated success in developing and motivating strong restaurant teams capable of handling over 200 customers hourly. Keeps all areas clean and sanitized while managing inventory and preventing waste.<br><br>Consistent career history of operations improvement, team building and revenue increases.</p>
+                                                        </div>
+                                                        </a>
+                                                    </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade" id="finance-tab-pane" role="tabpanel" aria-labelledby="finance-tab" tabindex="0">
+                                    <div class="row">
+
+                                        <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+                                            <div class="custom-block bg-white shadow-lg">
+                                                    <div class="d-flex">
+                                                        <a href="assets/test_resumes/SophiaFlores.pdf" download>
+                                                        <div>
+                                                            <h5 class="mb-2">Sophia Flores</h5>
+                                                            <p><br>Certified Bookkeeper with four years of experience in accounting and finance.<br><br>Skilled in analyzing, verifying and preparing reports and following best practice accounting procedures.</p>
+                                                        </div>
+                                                        </a>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="tab-pane fade" id="marketing-tab-pane" role="tabpanel" aria-labelledby="marketing-tab" tabindex="0">
+                                    <div class="row">
+
+                                        <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+                                            <div class="custom-block bg-white shadow-lg">
+                                                    <div class="d-flex">
+                                                        <a href="assets/test_resumes/CarringtonBlack.pdf" download>
+                                                        <div>
+                                                            <h5 class="mb-2">Carrington Black</h5>
+                                                            <p><br>Business development professional with experience in customer relationship management.<br><br>Oversaw global accounts for over $3 million in resume, managing risk and improving client satisfaction by 5%.</p>
+                                                        </div>
+                                                        </a>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+                                            <div class="custom-block bg-white shadow-lg">
+                                                    <div class="d-flex">
+                                                        <a href="assets/test_resumes/EbonyMoore.pdf" download>
+                                                        <div>
+                                                            <h5 class="mb-2">Ebony Moore</h5>
+                                                            <p><br>Hardworking professional with academic training in business administration and work experience in project management and marketing.<br><br>Seeking a role as a Project Manager to employ my skills in organization and communication and grow as a management professional in the marketing sector.</p>
+                                                        </div>
+                                                        </a>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+                                            <div class="custom-block bg-white shadow-lg">
+                                                    <div class="d-flex">
+                                                        <a href="assets/test_resumes/DarenJones.pdf" download>
+                                                        <div>
+                                                            <h5 class="mb-2">Daren Jones</h5>
+                                                            <p><br>Marketing Manager</p>
+                                                        </div>
+                                                        </a>
+                                                    </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade" id="sales-tab-pane" role="tabpanel" aria-labelledby="sales-tab" tabindex="0">
+                                    <div class="row">
+
+                                        <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+                                            <div class="custom-block bg-white shadow-lg">
+                                                    <div class="d-flex">
+                                                        <a href="assets/test_resumes/MarvinTello.pdf" download>
+                                                        <div>
+                                                            <h5 class="mb-2">Marvin Tello</h5>
+                                                            <p><br>A forward-thinking salesperson with 5+ years of experience and over $2M in sales who knows the importance of empathy and attentiveness in closing deals.<br><br>Seeking a lead sales specialist role where I can continue to foster and hone these traits as I continue to grow within an accomplished sales organization like Pitney Bowes.
+                                                            </p>
+                                                        </div>
+                                                        </a>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+                                            <div class="custom-block bg-white shadow-lg">
+                                                    <div class="d-flex">
+                                                        <a href="assets/test_resumes/SteeleHastings.pdf" download>
+                                                        <div>
+                                                            <h5 class="mb-2">Steele Hastings</h5>
+                                                            <p><br>High-energy and seasoned sales manager focused on improving performance through rigorous data analysis. Through 1:1 coaching and introducing new tools, I have generated $1M+ in incremental sales.<br><br>Eager to bring this energy to T opView Sightseeing where my ability to leverage data will positively impact team and individual sales.</p>
+                                                        </div>
+                                                        </a>
+                                                    </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+
+                                <div class="tab-pane fade" id="healthcare-tab-pane" role="tabpanel" aria-labelledby="healthcare-tab" tabindex="0">
+                                    <div class="row">
+
+                                        <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+                                            <div class="custom-block bg-white shadow-lg">
+                                                    <div class="d-flex">
+                                                        <a href="assets/test_resumes/HollyYoung.pdf" download>
+                                                        <div>
+                                                            <h5 class="mb-2">Holly Young</h5>
+                                                            <p><br>Compassionate, detail-oriented Certified Medical Assistant with more than three years of experience compiling patient charts and medical information, processing insurance payments and overseeing general office operations such as scheduling and answering phones.</p>
+                                                        </div>
+                                                        </a>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="tab-pane fade" id="creatives-tab-pane" role="tabpanel" aria-labelledby="creatives-tab" tabindex="0">
+                                    <div class="row">
+
+                                        <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+                                            <div class="custom-block bg-white shadow-lg">
+                                                    <div class="d-flex">
+                                                        <a href="assets/test_resumes/RhodaJackson.pdf" download>
+                                                        <div>
+                                                            <h5 class="mb-2">Rhoda Jackson</h5>
+                                                            <p><br>Graphic Designer</p>
+                                                        </div>
+                                                        </a>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+                                            <div class="custom-block bg-white shadow-lg">
+                                                    <div class="d-flex">
+                                                        <a href="assets/test_resumes/ClaraThompson.pdf" download>
+                                                        <div>
+                                                            <h5 class="mb-2">Clara Thompson</h5>
+                                                            <p><br>Aspiring graphic designer seeking an entry-level position at RDW Group, eager to contribute my creativity, passion for design, and strong technical skills to support the agency's mission of crafting innovative marketing solutions.</p>
+                                                        </div>
+                                                        </a>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+                                            <div class="custom-block bg-white shadow-lg">
+                                                    <div class="d-flex">
+                                                        <a href="assets/test_resumes/LilyRobinson.pdf" download>
+                                                        <div>
+                                                            <h5 class="mb-2">Lily Robinson</h5>
+                                                            <p><br>Creative Director</p>
+                                                        </div>
+                                                        </a>
+                                                    </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+
+
+
+                                <div class="tab-pane fade" id="grads-tab-pane" role="tabpanel" aria-labelledby="grads-tab" tabindex="0">
+                                    <div class="row">
+
+                                        <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+                                            <div class="custom-block bg-white shadow-lg">
+                                                    <div class="d-flex">
+                                                        <a href="assets/test_resumes/DarienMcCullen.pdf" download>
+                                                        <div>
+                                                            <h5 class="mb-2">Darien McCullen</h5>
+                                                            <p><br>Recent graduate with a bachelor's degree in computer science and exemplary data analysis and engineering experience seeking a DevOps Engineer position.</p>
+                                                        </div>
+                                                        </a>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+                                            <div class="custom-block bg-white shadow-lg">
+                                                    <div class="d-flex">
+                                                        <a href="assets/test_resumes/SandyBarker.pdf" download>
+                                                        <div>
+                                                            <h5 class="mb-2">Sandy Barker</h5>
+                                                            <p><br>Enthusiastic and motivated high school student with strong communication, teamwork, and problem-solving skills.<br><br>Seeking to apply my abilities in a part-time position where I can contribute to the team and gain valuable work experience.</p>
+                                                        </div>
+                                                        </a>
+                                                    </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+
+        </main>
+
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/jquery.sticky.js"></script>
+        <script src="js/custom.js"></script>
+
+    </body>
+</html>

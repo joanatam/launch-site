@@ -6,20 +6,36 @@ https://templatemo.com/tm-590-topic-listing
 
 */
 
+
+/*
+hold colors
+  --white-color:                  #ffffff;
+  --primary-color:                #2463EB;
+  --secondary-color:              #1C4ED8;
+  --section-bg-color:             #f0f8ff;
+  --custom-btn-bg-color:          #1C4ED8;
+  --custom-btn-bg-hover-color:    #f2b72c;
+  --dark-color:                   #000000;
+  --p-color:                      #717275;
+  --border-color:                 #20C182;
+  --link-hover-color:             #f2b72c;
+*/
+
+
 /*---------------------------------------
   CUSTOM PROPERTIES ( VARIABLES )             
 -----------------------------------------*/
 :root {
   --white-color:                  #ffffff;
-  --primary-color:                #13547a;
-  --secondary-color:              #80d0c7;
+  --primary-color:                #2463EB;
+  --secondary-color:              #1C4ED8;
   --section-bg-color:             #f0f8ff;
-  --custom-btn-bg-color:          #80d0c7;
-  --custom-btn-bg-hover-color:    #13547a;
+  --custom-btn-bg-color:          #2463EB;
+  --custom-btn-bg-hover-color:    #1C4ED8;
   --dark-color:                   #000000;
   --p-color:                      #717275;
-  --border-color:                 #7fffd4;
-  --link-hover-color:             #13547a;
+  --border-color:                 #20C182;
+  --link-hover-color:             #f2b72c;
 
   --body-font-family:             'Open Sans', sans-serif;
   --title-font-family:            'Montserrat', sans-serif;
@@ -50,6 +66,31 @@ body {
   font-family: var(--body-font-family); 
 }
 
+
+/*---------------------------------------
+  Floating Action Button               
+-----------------------------------------*/
+.fab-container {
+    position:fixed;
+    bottom:50px;
+    right:50px;
+    cursor:pointer;
+}
+
+/*
+.fab-button {
+    position:fixed;
+    bottom:50px;
+    right:50px;
+    cursor:pointer;
+    background-image: url("images/YellowTransparentGlider.png");
+    transition: background-image 0.3s ease-in-out;
+}
+
+.fab-button:hover {
+    background-image: url("images/BlackTransparentGlider.png");
+}
+*/
 
 /*---------------------------------------
   TYPOGRAPHY               
@@ -147,7 +188,7 @@ strong {
 }
 
 .section-overlay {
-  background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+  background-image: linear-gradient(15deg, #2463EB 0%, #1C4ED8 100%);
   position: absolute;
   top: 0;
   left: 0;
@@ -209,21 +250,30 @@ strong {
 /*---------------------------------------
   CUSTOM BUTTON               
 -----------------------------------------*/
-.custom-btn {
-  background: var(--custom-btn-bg-color);
-  border: 2px solid transparent;
-  border-radius: var(--border-radius-large);
-  color: var(--white-color);
-  font-size: var(--btn-font-size);
-  font-weight: var(--font-weight-semibold);
-  line-height: normal;
-  transition: all 0.3s;
-  padding: 10px 20px;
-}
+
+ .custom-btn {
+      position: relative;
+      width: 200px;
+      height: 150px;
+      margin: 20px 0;
+      border-radius: 50% / 10%;
+      color: white;
+      text-align: center;
+      font-size: var(--btn-font-size);
+      font-weight: var(--font-weight-semibold);
+      line-height: normal;
+      text-indent: .1em;   
+      padding: 10px 20px;
+      z-index: index 3;
+      box-shadow: 0 1rem 3rem rgba(0,0,0,0.175);
+      background: var(--custom-btn-bg-color);
+ }
 
 .custom-btn:hover {
   background: var(--custom-btn-bg-hover-color);
-  color: var(--white-color);
+  color: white;
+  z-index: index 3;
+  box-shadow: 0 1rem 3rem rgba(0,0,0,0.175)
 }
 
 .custom-border-btn {
@@ -246,9 +296,10 @@ strong {
 
 /*---------------------------------------
   SITE HEADER              
+    background-image: linear-gradient(15deg, #2463EB 0%, #1C4ED8 100%);
 -----------------------------------------*/
 .site-header {
-  background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+  background-image: linear-gradient(55deg, #2463EB 0%, #1C4ED8 100%);
   padding-top: 150px;
   padding-bottom: 80px;
 }
@@ -486,7 +537,7 @@ strong {
   HERO        
 -----------------------------------------*/
 .hero-section {
-  background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+  background-image: linear-gradient(15deg, #2463EB 0%, #1C4ED8 100%);
   position: relative;
   overflow: hidden;
   padding-top: 150px;
@@ -719,6 +770,99 @@ blockquote {
 .active>.page-link, .page-link.active {
   background-color: var(--secondary-color);
   border-color: var(--secondary-color);
+}
+
+
+/*---------------------------------------
+  HORIZONTAL SCROLL IMAGES              
+-----------------------------------------*/
+
+* {
+  box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.gallery-container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  /*background-color: var(--secondary-color);*/
+  padding: 16px;
+  margin:12px;
+  color: white;
+}
+
+.gallery-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.gallery-column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumbnail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
 }
 
 
